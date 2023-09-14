@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+    <div class="loginpage">
+        <form action='/' method="POST">
+            <h1>signup</h1><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="confirmpassword">ConfirmPassword</label><br>
+            <input type="password" id="confirmPassword" name="confirmpassword" required><br><br>
+            <!--<a href="login.html" target="_self">-->
+            <a href="{{url_for('login')}}" target="_self"><button type="submit" value="submit">signup</button></a>
+        </form>
+    </div>
+</body>
+</html>

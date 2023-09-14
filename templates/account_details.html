@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='account_details.css')}}">
+</head>
+<body>
+    <div class="accountdetailsform">
+        <form action='/accdetail' method="POST">
+            <h1>Account Details</h1><br>
+            <label for="first_name">first_name</label><br>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+            <label for="last_name">last_name</label><br>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+            <label for="mobileno">mobileno</label><br>
+            <input type="tel" id="mobileno" name="mobileno" required><br><br>
+            <label for="gender">gender</label><br>
+            <select name="gender" id="gender">
+                <option value="">select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select><br><br>
+            <button type="submit" value="submit">save</button>
+            <a href="{{url_for('login')}}" target="_self"><button type="button">back</button></a>
+        </form>
+    </div>
+</body>
+</html>

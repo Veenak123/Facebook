@@ -1,0 +1,11 @@
+.friends{
+    margin: 2px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 350px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    backdrop-filter: blur(8px);
+}
